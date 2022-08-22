@@ -1,0 +1,38 @@
+nav,
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+section {
+    width: 33%;
+}
+
+#interview-prep {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 992px) {
+    section {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav,
+    main {
+        flex-direction: column;
+    }
+
+    section {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
